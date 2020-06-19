@@ -10,7 +10,8 @@
     "directory": "dist/"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "api"
   ],
   "keywords": [],
   "author": "",
