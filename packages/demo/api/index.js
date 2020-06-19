@@ -1,1 +1,1 @@
-console.log('api/demo');
+console.log('api//demo');
