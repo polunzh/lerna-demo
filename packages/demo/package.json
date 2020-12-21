@@ -1,6 +1,6 @@
 {
   "name": "tzh-demo",
-  "version": "1.0.3",
+  "version": "0.1.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "gitHead": "3dd851fe3fdf3145ccc3df2172a4621ad1edf5ff"
+  "gitHead": "dfcc3b9eb8329257fdc536d4cc065aca017976e6"
 }
