@@ -6,9 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "publishConfig": {
-    "directory": "dist/"
-  },
   "files": [
     "index.js",
     "api"
@@ -16,5 +13,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "gitHead": "dfcc3b9eb8329257fdc536d4cc065aca017976e6"
+  "gitHead": "e785724dba7a458cb2e582cf9fee766cf184aa05"
 }
