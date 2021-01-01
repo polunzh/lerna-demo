@@ -1,75 +1,16 @@
-0 silly argv {
-0 silly argv   _: [ 'publish' ],
-0 silly argv   composed: 'publish',
-0 silly argv   lernaVersion: '3.19.0',
-0 silly argv   '$0': '/Users/zhenqiang/.config/yarn/global/node_modules/.bin/lerna'
-0 silly argv }
-1 notice cli v3.19.0
-2 verbose rootPath /Users/zhenqiang/Documents/code/lerna-demo
-3 verbose session ae06c0cdff91ce51
-4 verbose user-agent lerna/3.19.0/node@v12.7.0+x64 (darwin)
-5 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '3.19.0' }
-6 verbose rootPath /Users/zhenqiang/Documents/code/lerna-demo
-7 info current version 0.0.0
-8 silly isAnythingCommitted
-9 verbose isAnythingCommitted 1
-10 silly currentBranch
-11 verbose currentBranch master
-12 silly remoteBranchExists
-13 silly isBehindUpstream
-14 silly isBehindUpstream master is behind origin/master by 0 commit(s) and ahead by 0
-15 silly hasTags
-16 verbose hasTags false
-17 info Assuming all packages changed
-18 verbose updated tzh-demo
-19 verbose git-describe undefined => "bb82daa"
-20 silly git-describe parsed => {"refCount":"1","sha":"bb82daa","isDirty":false}
-21 info execute Skipping releases
-22 silly lifecycle No script for "preversion" in "root", continuing
-23 silly lifecycle No script for "preversion" in "tzh-demo", continuing
-24 silly lifecycle No script for "version" in "tzh-demo", continuing
-25 silly lifecycle No script for "version" in "root", continuing
-26 silly gitAdd [
-26 silly gitAdd   '/Users/zhenqiang/Documents/code/lerna-demo/packages/demo/package.json',
-26 silly gitAdd   '/Users/zhenqiang/Documents/code/lerna-demo/lerna.json'
-26 silly gitAdd ]
-27 silly gitCommit v0.1.0
-28 verbose git [ 'commit', '-m', 'v0.1.0' ]
-29 silly gitTag v0.1.0
-30 verbose git [ 'tag', 'v0.1.0', '-m', 'v0.1.0' ]
-31 silly lifecycle No script for "postversion" in "tzh-demo", continuing
-32 silly lifecycle No script for "postversion" in "root", continuing
-33 info git Pushing tags...
-34 silly gitPush origin master
-35 info publish Publishing packages to npm...
-36 info Verifying npm credentials
-37 verbose Retrieving npm user profile
-38 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 1252ms
-39 silly npm profile get received {"tfa":{"pending":false,"mode":"auth-only"},"name":"polunzh","email":"polunzh@gmail.com","email_verified":true,"created":"2017-03-10T02:07:56.219Z","updated":"2020-05-15T06:31:04.780Z","cidr_whitelist":null}
-40 silly get npm username received {"username":"polunzh","tfa":{"pending":false,"mode":"auth-only"},"name":"polunzh","email":"polunzh@gmail.com","email_verified":true,"created":"2017-03-10T02:07:56.219Z","updated":"2020-05-15T06:31:04.780Z","cidr_whitelist":null}
-41 silly verifyNpmPackageAccess
-42 http fetch GET 200 https://registry.npmjs.org/-/org/polunzh/package?format=cli 360ms
-43 info Checking two-factor auth mode
-44 verbose Retrieving npm user profile
-45 http fetch GET 200 https://registry.npmjs.org/-/npm/v1/user 322ms
-46 silly npm profile get received {"tfa":{"pending":false,"mode":"auth-only"},"name":"polunzh","email":"polunzh@gmail.com","email_verified":true,"created":"2017-03-10T02:07:56.219Z","updated":"2020-05-15T06:31:04.780Z","cidr_whitelist":null}
-47 silly 2FA { pending: false, mode: 'auth-only' }
-48 warn ENOLICENSE Package tzh-demo is missing a license.
-48 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
-48 warn ENOLICENSE See https://choosealicense.com for additional guidance.
-49 silly getCurrentSHA
-50 verbose getCurrentSHA 14845c5b3dc5fc5a4c89ba7234629ceaa29a570f
-51 silly lifecycle No script for "prepublish" in "root", continuing
-52 silly lifecycle No script for "prepare" in "root", continuing
-53 silly lifecycle No script for "prepublishOnly" in "root", continuing
-54 silly lifecycle No script for "prepack" in "root", continuing
-55 verbose pack-directory packages/demo/dist
-56 silly lifecycle No script for "prepublish" in "tzh-demo", continuing
-57 silly lifecycle No script for "prepare" in "tzh-demo", continuing
-58 silly lifecycle No script for "prepublishOnly" in "tzh-demo", continuing
-59 silly lifecycle No script for "prepack" in "tzh-demo", continuing
-60 silly lifecycle No script for "postpack" in "tzh-demo", continuing
-61 verbose packed packages/demo/dist
-62 silly lifecycle No script for "postpack" in "root", continuing
-63 verbose publish tzh-demo
-64 error
+15 error Error: Command failed: git remote update
+15 error kex_exchange_identification: Connection closed by remote host
+15 error fatal: Could not read from remote repository.
+15 error
+15 error Please make sure you have the correct access rights
+15 error and the repository exists.
+15 error error: Could not fetch origin
+15 error
+15 error Fetching origin
+15 error
+15 error     at makeError (/Users/zhenqiang/.config/yarn/global/node_modules/execa/index.js:174:9)
+15 error     at Function.module.exports.sync (/Users/zhenqiang/.config/yarn/global/node_modules/execa/index.js:338:15)
+15 error     at Object.execSync (/Users/zhenqiang/.config/yarn/global/node_modules/@lerna/child-process/index.js:26:16)
+15 error     at updateRemote (/Users/zhenqiang/.config/yarn/global/node_modules/@lerna/version/lib/is-behind-upstream.js:26:16)
+15 error     at isBehindUpstream (/Users/zhenqiang/.config/yarn/global/node_modules/@lerna/version/lib/is-behind-upstream.js:11:3)
+15 error     at VersionCommand.initialize (/Users/zhenqiang/.config/yarn/global/node_modules/@lerna/version/index.js:150:9)
