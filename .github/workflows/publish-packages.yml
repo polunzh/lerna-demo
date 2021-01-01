@@ -42,6 +42,7 @@ jobs:
       - name: Publish to NPM
         run: |
           npm config set '//registry.npmjs.org/:_authToken' "${{ secrets.NPM_TOKEN }}"
+          npm whoami
           echo "publish version ${CURRENT_VERSION}"
           lerna publish ${CURRENT_VERSION} --force-publish --yes
 
